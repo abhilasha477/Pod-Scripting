@@ -8,7 +8,7 @@ on:
         
 
 jobs:
-  comment:
+  comment: 
     runs-on: self-hosted
     steps:
       - run: uname -a
@@ -18,3 +18,5 @@ jobs:
           local_path: ./* # default is ./*
           # files will copy to under remote_path
           remote_path: /home/ubuntu
+          COMMAND: |
+               ls
